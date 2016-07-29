@@ -63,7 +63,7 @@ function main(){
   echo "..git path : OK"
 
   #get tag datetime
-  echo -en "\e[46m3)Tag date\e[0;37m\n"
+  echo -en "\e[46m3)Tag info\e[0;37m\n"
   dtTag=$(tagInfo $tag)
 
   #if tag date null
@@ -92,7 +92,7 @@ function main(){
       opDevelop=$(dateCompare "$dtTag" "$dtDevelop")
       opMaster=$(dateCompare "$dtTag" "$dtMaster")
 
-      echo -e "..branch  : $addr \t\t| $origin1 merged on: $dtDevelop [$opDevelop] | $origin2 merged on: $dtMaster [$opDevelop]"
+      echo -e "..branch  : $addr \t| $origin1 merged on: $dtDevelop [$opDevelop] | $origin2 merged on: $dtMaster [$opDevelop]"
   done
 
 }
