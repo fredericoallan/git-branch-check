@@ -1,4 +1,4 @@
-### git branch check
+# git branch check
 
 Bash script to check if your branches was merged into master/develop origin comparing tag datetime
 
